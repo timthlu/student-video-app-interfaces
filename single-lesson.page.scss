@@ -1,0 +1,87 @@
+.video{
+    width:90% !important;
+    height:auto !important;
+    margin: 5% auto;
+    border:15px solid rgb(255,0,127);
+    border-radius:10px;
+}
+
+.video:fullscreen {
+    border:none;
+    background-color: rgb(64,219,187);
+    background-image: url("../../assets/image/audio_book_edited.png");
+    background-repeat: no-repeat;
+    background-position: center 10%;
+}
+
+.title {
+    font-family:"calibri";
+    font-size:20px;
+    font-weight:bold;
+    background-color: rgb(64,219,187);
+    text-align:center;
+    color:white;
+    padding: 10px 0px;
+    margin:0;
+}
+
+.subtitle {
+    font-family:"calibri";
+    font-size:18px;
+    font-weight:bold;
+    height:20px;
+    width:85%;
+    margin: 0px auto 5% auto;
+    text-align:left;
+}
+
+.description {
+    overflow:scroll;
+    color:grey;
+    height:25%;
+    width:85%;
+    font-family:"calibri";
+    font-size:18px;
+    text-align:left;
+    margin:auto;
+}
+
+.table {
+    margin: 30px auto 20px auto;
+    text-align:center;
+}
+
+th > * {
+    vertical-align : middle;
+}
+
+.image {
+    margin-right:10px;
+    transform:scale(0.75);
+}
+
+.button1 {
+    color:white;
+    font-size:18px;
+    font-family:"calibri";
+    width:150px;
+    height:30px;
+    border-radius:5px;
+    background-color:rgb(64,219,187);
+}
+
+.button2 {
+    color:white;
+    font-size:18px;
+    font-family:"calibri";
+    width:150px;
+    height:30px;
+    border-radius:5px;
+    background-color:rgb(244,183,87);
+}
+
+.flex {
+    text-align:center;
+    justify-content:center;
+    flex-direction:column;
+}

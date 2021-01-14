@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <h1 class="title">Grade 1 > Lesson 1</h1>
+</ion-header>
+
+<ion-content class="flex">     
+  <video class="video" controls autoplay>
+    <source src="http://michaelvideoapp.a2aweb.net/test/big-buck-bunny_trailer.webm" type="video/webm">          
+  </video>
+
+  <p class="subtitle">Detailed Introduction</p>
+  <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+     since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+     five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the 
+     release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+      including versions of Lorem Ipsum.</p>
+  
+  <table class="table">
+    <tr>
+      <th>
+        <img src="../../assets/image/go_to_quiz.png" class="image"/>
+      </th>
+      <th>
+        <button class="button1" [routerLink]="['/quiz']" [queryParams]="{lesson_id:lesson.lesson_id}">Go to quiz</button>
+      </th>
+    </tr>
+    <tr>
+      <th>
+          <img src="../../assets/image/go_to_recording.png" class="image"/>
+      </th>
+      <th>
+        <button class="button2" [routerLink]="['/record-voice']">Go to recording</button>
+      </th>
+    </tr>
+  </table>
+</ion-content>

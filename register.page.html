@@ -1,0 +1,64 @@
+<ion-content class="flex">
+  <span class="all_content">
+    <img src="../../assets/image/sign_up_icon.png" class="image1"/>
+
+    <span class="span1">
+      <ion-label class="title">Sign Up</ion-label>
+      <ion-label class="text">Create an account</ion-label>
+    </span>
+
+    <span class="span2">
+      <table class="table">
+        <tr>
+          <th>
+            <img src="../../assets/image/name_icon.png" class="image2"/>
+          </th>
+          <th>
+            <ion-input class="input1" placeholder="First Name" [(ngModel)]="register_user.firstname"></ion-input>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <img src="../../assets/image/name_icon.png" class="image2"/>
+          </th>
+          <th>
+            <ion-input class="input" placeholder="Last Name" [(ngModel)]="register_user.lastname"></ion-input>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <img src="../../assets/image/email_icon.png" class="image2"/>
+          </th>
+          <th>
+            <ion-input class="input" placeholder="Email" [(ngModel)]="register_user.email"></ion-input>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <img src="../../assets/image/phone_and_chat_icon.png" class="image2"/>
+          </th>
+          <th>
+            <ion-input class="input" placeholder="Phone" [(ngModel)]="register_user.telephone"></ion-input>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+              <img src="../../assets/image/password_icon.png" class="image2"/>
+          </th>
+          <th>
+              <ion-input type="password" class="input" placeholder="Password" [(ngModel)]="register_user.password"></ion-input>
+          </th>
+        </tr>
+      </table>
+    </span>
+
+    <span class="span3">
+      <button (click)="register()" class="button">Register</button>
+      <ion-label class="text"> Already have an account?<div [routerLink]="['/login']" class="link">Login</div></ion-label>
+    </span>
+  </span>
+</ion-content>

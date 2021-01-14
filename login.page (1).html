@@ -1,0 +1,21 @@
+<ion-content class="flex">
+  <span class="all_content">
+    <img src="../../assets/image/sign_in_icon.png" class="image"/>
+    
+    <span class="span1">
+      <ion-label class="title">Sign In</ion-label>
+      <ion-label class="text">Login to continue to your account</ion-label>
+    </span>  
+
+    <span class="span2">
+      <ion-input class="input" placeholder="Enter Email" [(ngModel)]="login_user.email"></ion-input>
+      <ion-input class="input" placeholder="Enter Password" type="password" [(ngModel)]="login_user.password"></ion-input>
+    </span>
+
+    <span class="span3">
+      <button (click)="login()" class="button">Login</button>
+      <ion-label class="text"> Forgot password?<div [routerLink]="['/forgot']" class="link">Click here!</div></ion-label>
+      <ion-label class="text"> Don't have an account?<div [routerLink]="['/register']" class="link">Sign Up</div></ion-label>
+    </span>
+  </span>
+</ion-content>

@@ -1,0 +1,102 @@
+<ion-content class="flex">
+  <span class="all_content">
+    <h1 class="title">CHECKOUT</h1>
+
+    <table class="table1">
+      <span class="line"></span>
+      <tr class="first_row">
+        <th class="table1_element">
+          <div class="container1" id="complete">
+            <span class="checkmark_border1"></span>
+            <span class="mark1"></span>
+          </div>
+        </th>
+        <th class="table1_element">
+          <div class="container1" id="current_page">
+            <span class="checkmark_border1"></span>
+            <span class="mark1"></span>
+          </div>
+        </th>
+        <th class="table1_element">
+          <div class="container1" id="incomplete">
+            <span class="checkmark_border1"></span>
+            <span class="mark1"></span>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th class="table1_element">
+          Sign In
+        </th>
+        <th class="table1_element">
+          Payment
+        </th>
+        <th class="table1_element">
+          Finish
+        </th>
+      </tr>
+    </table>
+
+    <label class="container2">
+      <input type="radio" checked="checked" name="methodOfPayment" class="radio">
+      Pay <div class="bold">$56.95</div> with PayPal
+      <span class="checkmark_border2"></span>
+      <span class="mark2"></span>
+      <span class="border2"></span>
+    </label>
+    <label class="container2">
+      <input type="radio" name="methodOfPayment" class="radio">
+      Pay <div class="bold">$56.95</div> with WeChat
+      <span class="checkmark_border2"></span>
+      <span class="mark2"></span>
+      <span class="border2"></span>
+    </label>
+
+    <h2 class="label">Details</h2>
+
+    <table class="table2">
+      <tr>
+        <th colspan="2">
+          <ion-input class="input" placeholder="Cardholder's Name"></ion-input>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <ion-input class="input" placeholder="Card Number"></ion-input>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ion-input class="input" placeholder="Valid Thru"></ion-input>
+        </th>
+        <th>
+          <ion-input class="input" placeholder="CVV/CVC"></ion-input>
+        </th>
+      </tr>
+    </table>
+
+    <table class="table3">
+      <tr>
+        <th>
+          <img src="../../assets/image/payment_icon.png" class="image"/>
+        </th>
+        <th>
+          <ion-label class="link">Pay Now</ion-label>
+        </th>
+      </tr>
+    </table>
+
+    <!-- 
+      <a [hidden]="sprice == 0" (click)="new_order('single')" href="javascript:;">Order Single Course</a>
+      
+      <br/>
+      <br/>
+      
+      <a [hidden]="aprice == 0" (click)="new_order('all')" href="javascript:;">Order All Course</a>
+      
+      <div (click)="go_qr_link()" class="qr-wrapper">        
+          <div id="qrcode"></div>            
+      </div>
+    -->
+  </span>  
+</ion-content>
